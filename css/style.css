@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@300&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p,
+a {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(0, 0%, 95%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    margin: 0 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cards {
+    /* border: 2px solid tomato; */
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 3rem;
+    color: #fff;
+    opacity: 1;
+    /* color: hsla(0, 0%, 100%, 0.75); */
+}
+
+p {
+    color: #fff;
+    
+    /* color: hsla(0, 0%, 100%, 0.75); */
+}
+
+.cards p:first-of-type {
+    margin-top: 3rem;
+    line-height: 1.7;
+    font-size: 1.4rem;
+    opacity: .8;
+} 
+
+.cards p:last-of-type {
+    font-size: 1.4rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 20px;
+    padding: 1rem 2.5rem;
+}
+
+a:active {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans a:active,
+.suvs a:active,
+.luxury a:active {
+    color: #fff;
+}
+
+@media only screen and (max-width: 658px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin: 3rem;
+    }
+}
+
+@media only screen and (max-width: 786px) and (min-width: 768px) {
+    .cards {
+        padding: 3rem;
+    }
+}
